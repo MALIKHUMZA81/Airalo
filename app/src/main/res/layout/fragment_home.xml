@@ -37,6 +37,24 @@
             android:textSize="@dimen/textSize16sp"
             android:textStyle="bold" />
 
+        <EditText
+            android:id="@+id/editTextSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:background="@color/color_hint"
+            android:hint="@string/search_here"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="@dimen/padding_8"
+            android:paddingEnd="@dimen/padding_8"
+            android:textSize="16sp"
+            tools:ignore="LabelFor,MissingConstraints" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/countriesRecyclerView"
             android:layout_width="match_parent"

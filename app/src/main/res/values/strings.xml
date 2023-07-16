@@ -9,4 +9,5 @@
     <string name="failed">Failed</string>
     <string name="successful">Successful</string>
       <string name="hello">Hello</string>
+    <string name="search_here">Search Here</string>
 </resources>

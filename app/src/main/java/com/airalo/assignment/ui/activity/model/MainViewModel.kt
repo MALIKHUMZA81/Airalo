@@ -14,7 +14,6 @@ import javax.inject.Inject
 @HiltViewModel
 class MainViewModel @Inject constructor() : ViewModel() {
 
-    // for the webView
     private var _uiModelCountryLiveData = MutableLiveData<UIModelCountry>()
     var uiModelCountryLiveData: LiveData<UIModelCountry> = _uiModelCountryLiveData
 
