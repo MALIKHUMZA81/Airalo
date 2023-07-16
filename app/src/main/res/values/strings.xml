@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Airalo</string>
+    <string name="screen_home_title_str">Home</string>
+    <string name="message_no_network_connected_str">No network connected!</string>
+    <string name="message_something_went_wrong_str">Something went wrong!</string>
+    <string name="label_no_internet">No internet connection</string>
+    <string name="text_label_popular_countries">Popular Countries</string>
+    <string name="search">Search</string>
+    <string name="failed">Failed</string>
+    <string name="successful">Successful</string>
+      <string name="hello">Hello</string>
+</resources>
