@@ -47,7 +47,7 @@ class CountriesAdapter :
             rowItemCountriesBinding.apply {
                 tvCountryName.text = uIModelCountry.title
                 imgCountryFlag.load(imageUrl = uIModelCountry.flagImage)
-                imgPackageInfo.setOnClickListener {
+                cardViewContainer.setOnClickListener {
                     onCountrySelection.invoke(uIModelCountry)
                 }
             }

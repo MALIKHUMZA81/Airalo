@@ -9,12 +9,14 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.RecyclerView
 import com.airalo.assignment.R
 import com.airalo.assignment.base.BaseFragment
+import com.airalo.assignment.core.extensions.replaceFragment
 import com.airalo.assignment.core.extensions.showToastMsg
 import com.airalo.assignment.core.extensions.viewBinding
 import com.airalo.assignment.databinding.FragmentHomeBinding
 import com.airalo.assignment.ui.activity.model.MainViewModel
 import com.airalo.assignment.ui.home.adapter.CountriesAdapter
 import com.airalo.assignment.ui.home.model.HomeViewModel
+import com.airalo.assignment.ui.packages.PackagesFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 /**
@@ -34,6 +36,7 @@ class HomeFragment : BaseFragment(R.layout.fragment_home) {
         countriesAdapter = CountriesAdapter().also {
             it.onCountrySelectionListener { country ->
                 sharedViewModel.keepSelectedCountry(country)
+                replaceFragment(PackagesFragment())
             }
 
             it.stateRestorationPolicy =

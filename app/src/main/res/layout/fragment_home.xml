@@ -62,7 +62,6 @@
             android:layout_marginTop="10dp"
             android:background="@color/color_gray"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:spanCount="1"
             tools:ignore="MissingConstraints"
             tools:itemCount="7"
             tools:listitem="@layout/row_item_countries" />
