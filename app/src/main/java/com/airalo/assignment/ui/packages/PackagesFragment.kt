@@ -7,9 +7,11 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.RecyclerView
 import com.airalo.assignment.R
 import com.airalo.assignment.base.BaseFragment
+import com.airalo.assignment.core.extensions.backPress
 import com.airalo.assignment.core.extensions.showToastMsg
 import com.airalo.assignment.core.extensions.viewBinding
 import com.airalo.assignment.databinding.FragmentPackagesBinding
+import com.airalo.assignment.ui.activity.MainActivity
 import com.airalo.assignment.ui.activity.model.MainViewModel
 import com.airalo.assignment.ui.packages.adapter.PackagesAdapter
 import com.airalo.assignment.ui.packages.model.PackagesViewModel
@@ -38,6 +40,9 @@ class PackagesFragment : BaseFragment(R.layout.fragment_packages) {
             it.stateRestorationPolicy =
                 RecyclerView.Adapter.StateRestorationPolicy.PREVENT_WHEN_EMPTY
             binding.packagesRecyclerView.adapter = it
+        }
+        binding.btnBackPress.setOnClickListener {
+            getRootActivity().backPress()
         }
 
         initObservations()
