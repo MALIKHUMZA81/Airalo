@@ -8,8 +8,9 @@
     <string name="search">Search</string>
     <string name="failed">Failed</string>
     <string name="successful">Successful</string>
-      <string name="hello">Hello</string>
+    <string name="hello">Hello</string>
     <string name="search_here">Search Here</string>
     <string name="label_validity">VALIDITY</string>
+    <string name="Country_Name">Country Name</string>
     <string name="data">Data</string>
 </resources>

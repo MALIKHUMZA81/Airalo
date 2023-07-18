@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:background="@drawable/package_lifting"
+            android:background="@drawable/ic_package"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -64,13 +64,15 @@
                     android:paddingStart="@dimen/padding_6"
                     android:text="@string/data"
                     android:textSize="14sp"
-                    app:drawableStartCompat="@drawable/ic_unfold_more"
+                    android:gravity="center"
+                    app:drawableStartCompat="@drawable/ic_data"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.044"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.555" />
+                    app:layout_constraintVertical_bias="0.555"
+                    tools:ignore="RtlSymmetry" />
 
                 <TextView
                     android:id="@+id/tvPackageData"
@@ -101,7 +103,9 @@
                     android:paddingStart="@dimen/padding_6"
                     android:text="@string/label_validity"
                     android:textSize="14sp"
-                    app:drawableStartCompat="@drawable/ic_calendar"
+                    android:gravity="center"
+
+                    app:drawableStartCompat="@drawable/ic_validity"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.048"
@@ -132,8 +136,9 @@
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/activity_horizontal_margin"
-                android:background="@drawable/bg_button"
+                android:background="@drawable/ic_circle_radius"
                 android:gravity="center"
+                android:textColor="@color/basic_gray"
                 android:textStyle="bold"
                 tools:text="Us $8.50 - BUY NOW" />
 
@@ -145,6 +150,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="@dimen/activity_half"
+            android:backgroundTint="@color/Transparent"
             android:minWidth="130dp"
             android:minHeight="110dp" />
     </RelativeLayout>
