@@ -38,7 +38,7 @@
                     tools:text="Burj Mobile" />
 
                 <TextView
-                    android:id="@+id/tvCompanyOrigin"
+                    android:id="@+id/tvCountryOrigin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -58,26 +58,19 @@
                 android:layout_height="60dp"
                 android:padding="@dimen/padding_18">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/app_name"
-                    android:src="@drawable/ic_unfold_more"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingStart="@dimen/padding_6"
                     android:text="@string/data"
                     android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/ic_unfold_more"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.073"
+                    app:layout_constraintHorizontal_bias="0.044"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.6" />
+                    app:layout_constraintVertical_bias="0.555" />
 
                 <TextView
                     android:id="@+id/tvPackageData"
@@ -102,26 +95,18 @@
                 android:layout_height="60dp"
                 android:padding="@dimen/padding_18">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/app_name"
-                    android:src="@drawable/ic_unfold_more"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingStart="@dimen/padding_6"
                     android:text="@string/label_validity"
                     android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/ic_calendar"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.076"
+                    app:layout_constraintHorizontal_bias="0.048"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.6" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/tvPackageValidity"

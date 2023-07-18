@@ -1,6 +1,6 @@
 package com.airalo.assignment.data.usecases
 
-import com.airalo.assignment.data.repository.launches.CountriesRepository
+import com.airalo.assignment.data.repository.countries.CountriesRepository
 import javax.inject.Inject
 
 /**

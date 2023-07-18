@@ -3,7 +3,7 @@ package com.airalo.assignment.data.mappers
 import com.airalo.assignment.data.model.ModelPackagesResponse
 import com.airalo.assignment.ui.packages.model.UIModelPackageInfo
 
-object CompanyInfoMapper {
+object PackageInfoMapper {
 
     fun ModelPackagesResponse.toUIModelPackageInfo(): List<UIModelPackageInfo> {
         val defCountry = title

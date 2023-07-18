@@ -1,4 +1,4 @@
-package com.airalo.assignment.data.repository.launches
+package com.airalo.assignment.data.repository.countries
 
 import androidx.annotation.WorkerThread
 import com.airalo.assignment.core.extensions.noNetworkErrorMessage

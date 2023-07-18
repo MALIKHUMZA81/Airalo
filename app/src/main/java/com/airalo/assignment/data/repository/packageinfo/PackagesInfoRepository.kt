@@ -1,10 +1,10 @@
-package com.airalo.assignment.data.repository.companyinfo
+package com.airalo.assignment.data.repository.packageinfo
 
 import androidx.annotation.WorkerThread
 import com.airalo.assignment.core.extensions.noNetworkErrorMessage
 import com.airalo.assignment.core.extensions.somethingWentWrong
 import com.airalo.assignment.data.DataState
-import com.airalo.assignment.data.mappers.CompanyInfoMapper.toUIModelPackageInfo
+import com.airalo.assignment.data.mappers.PackageInfoMapper.toUIModelPackageInfo
 import com.airalo.assignment.data.remote.ApiInterface
 import com.airalo.assignment.data.remote.message
 import com.airalo.assignment.data.remote.onErrorSuspend

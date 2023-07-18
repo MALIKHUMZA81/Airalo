@@ -1,10 +1,10 @@
 package com.airalo.assignment.di
 
 import com.airalo.assignment.data.remote.ApiInterface
-import com.airalo.assignment.data.repository.companyinfo.PackagesInfoRepository
-import com.airalo.assignment.data.repository.companyinfo.PackagesInfoRepositoryImpl
-import com.airalo.assignment.data.repository.launches.CountriesRepository
-import com.airalo.assignment.data.repository.launches.CountriesRepositoryImpl
+import com.airalo.assignment.data.repository.packageinfo.PackagesInfoRepository
+import com.airalo.assignment.data.repository.packageinfo.PackagesInfoRepositoryImpl
+import com.airalo.assignment.data.repository.countries.CountriesRepository
+import com.airalo.assignment.data.repository.countries.CountriesRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

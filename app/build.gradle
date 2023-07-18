@@ -59,6 +59,7 @@ dependencies {
 
     // Hilt
     implementation "com.google.dagger:hilt-android:$hilt_version"
+    //testImplementation 'androidx.test.ext:junit-ktx:1.1.5'
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
@@ -71,6 +72,13 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
     implementation "com.squareup.okhttp3:logging-interceptor:4.9.1"
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation "androidx.arch.core:core-testing:2.2.0"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version"
+    testImplementation "io.mockk:mockk:1.13.3"
+    testImplementation "com.squareup.okhttp3:mockwebserver:$okhttp_version"
 
     // Third-party
     implementation "com.github.bumptech.glide:glide:$glide_version"

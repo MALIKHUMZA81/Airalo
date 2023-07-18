@@ -16,7 +16,7 @@ class PackagesAdapter :
     fun setItems(uiModelPackagesInfo: List<UIModelPackageInfo>) {
         packages.clear()
         packages.addAll(uiModelPackagesInfo)
-        notifyDataSetChanged()
+        notifyItemInserted(packages.size)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PackagesViewHolder {
@@ -41,7 +41,7 @@ class PackagesAdapter :
         fun bind(uIModelPackageInfo: UIModelPackageInfo) {
             rowItemPackagesBinding.apply {
                 tvOperatorName.text = uIModelPackageInfo.operator
-                tvCompanyOrigin.text = uIModelPackageInfo.country
+                tvCountryOrigin.text = uIModelPackageInfo.country
                 tvPackageData.text = uIModelPackageInfo.data
                 tvPackageValidity.text = uIModelPackageInfo.validity
                 btnBuyNow.text = "US $${uIModelPackageInfo.price} - BUY NOW"
