@@ -37,7 +37,7 @@ class ApiInterfaceTest {
         coEvery { apiInterface.fetchAvailablePackages(any()) } returns successResponse
 
         // Call the method to be tested
-        val response = apiInterface.fetchAvailablePackages("us")
+        val response = apiInterface.fetchAvailablePackages("philippines")
 
         // Assert the response
         assertNotNull(response)
